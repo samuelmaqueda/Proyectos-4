@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Buena.unity
+    guid: 4cbf939d7a25edd449ae94141f4da31b
   m_configObjects: {}
