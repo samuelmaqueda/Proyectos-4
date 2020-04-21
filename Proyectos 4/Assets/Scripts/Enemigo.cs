@@ -1,0 +1,66 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Enemigo : MonoBehaviour
+{
+	public float speed = 5;
+	public float contador = 0;
+	public GameObject punto2;
+	public GameObject puntoFin;
+	public Transform punto2Transform;
+	public Transform puntoFinTransform;
+	public bool llegada1;
+	public GameManager gm;
+	// Start is called before the first frame update
+	void Start()
+    {
+		gm = GameObject.FindObjectOfType<GameManager>();
+
+		punto2 = GameObject.Find("Punto 2");
+		punto2Transform = punto2.transform;
+
+		puntoFin = GameObject.Find("Llegada");
+		puntoFinTransform = puntoFin.transform;
+	}
+
+    // Update is called once per frame
+    void Update()
+    {
+		Comprobacion();
+		Patrulla();
+		
+    }
+
+	public void Patrulla()
+	{
+		float step = speed * Time.deltaTime;
+		if (llegada1 == false)
+		{
+			transform.position = Vector3.MoveTowards(transform.position, punto2Transform.position, step);
+			transform.LookAt(punto2.transform);
+		}
+		else
+		{
+			transform.position = Vector3.MoveTowards(transform.position, puntoFinTransform.position, step);
+			transform.LookAt(puntoFin.transform);
+
+			if (this.transform.position == puntoFinTransform.position)
+			{
+				Debug.Log("fin");
+				gm.vida -= 1;
+				Destroy(this.gameObject);
+			}
+		}
+		
+	}
+
+	public void Comprobacion()
+	{
+		if(this.transform.position == punto2Transform.position)
+		{
+			llegada1 = true;
+		}
+		
+	}
+}
