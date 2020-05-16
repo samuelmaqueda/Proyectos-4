@@ -19,7 +19,8 @@ public class Torreta : MonoBehaviour
         
     }
 
-	private void OnCollisionEnter(Collision other)
+
+	private void OnTriggerEnter(Collider other)
 	{
 		Debug.Log("entro");
 		var pablosito = other.gameObject;
