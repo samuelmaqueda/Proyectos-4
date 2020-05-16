@@ -6,6 +6,7 @@ public class InstanceManager : MonoBehaviour
 {
 	public GameObject prefabTorreta;
 	public GameManager gm;
+	public LayerMask suelo;
 
 	// Start is called before the first frame update
 	void Start()
@@ -24,7 +25,7 @@ public class InstanceManager : MonoBehaviour
 				Debug.Log("pulsado");
 				Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 				RaycastHit infoImpacto;
-				if (Physics.Raycast(ray, out infoImpacto))
+				if (Physics.Raycast(ray, out infoImpacto,Mathf.Infinity, suelo))
 				{
 					Debug.Log("impactado");
 					Vector3 puntoImpacto = infoImpacto.point;

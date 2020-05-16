@@ -478,6 +478,9 @@ MonoBehaviour:
   prefabTorreta: {fileID: 1723296754087591646, guid: f342a9ce6aabd004a91665ce27b98b96,
     type: 3}
   gm: {fileID: 2015579685}
+  suelo:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!4 &767158273
 Transform:
   m_ObjectHideFlags: 0
@@ -839,7 +842,7 @@ GameObject:
   - component: {fileID: 1554615697}
   - component: {fileID: 1554615696}
   - component: {fileID: 1554615695}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1257,6 +1260,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game manager
       objectReference: {fileID: 0}
+    - target: {fileID: 7178272722021946411, guid: 08868064aa94a144b8227f6a68b88156,
+        type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 1557051742}
+    - target: {fileID: 7178272722021946411, guid: 08868064aa94a144b8227f6a68b88156,
+        type: 3}
+      propertyPath: punto2
+      value: 
+      objectReference: {fileID: 1204568526}
+    - target: {fileID: 7178272722021946411, guid: 08868064aa94a144b8227f6a68b88156,
+        type: 3}
+      propertyPath: fin
+      value: 
+      objectReference: {fileID: 964369996}
+    - target: {fileID: 7178272722021946411, guid: 08868064aa94a144b8227f6a68b88156,
+        type: 3}
+      propertyPath: vida
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7178272722021946408, guid: 08868064aa94a144b8227f6a68b88156,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1311,26 +1334,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7178272722021946411, guid: 08868064aa94a144b8227f6a68b88156,
-        type: 3}
-      propertyPath: spawn
-      value: 
-      objectReference: {fileID: 1557051742}
-    - target: {fileID: 7178272722021946411, guid: 08868064aa94a144b8227f6a68b88156,
-        type: 3}
-      propertyPath: punto2
-      value: 
-      objectReference: {fileID: 1204568526}
-    - target: {fileID: 7178272722021946411, guid: 08868064aa94a144b8227f6a68b88156,
-        type: 3}
-      propertyPath: fin
-      value: 
-      objectReference: {fileID: 964369996}
-    - target: {fileID: 7178272722021946411, guid: 08868064aa94a144b8227f6a68b88156,
-        type: 3}
-      propertyPath: vida
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08868064aa94a144b8227f6a68b88156, type: 3}
