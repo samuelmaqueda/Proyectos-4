@@ -11,13 +11,14 @@ public class GameManager : MonoBehaviour
 	public float dinero = 100;
 	public Text vidaText;
 	public Text dineroText;
+	public float timer;
 
 	Transform fin;
     // Start is called before the first frame update
     void Start()
     {
 		
-		Instantiate(enemigo, spawn.position, Quaternion.identity);
+		
 
 	}
 
@@ -26,5 +27,12 @@ public class GameManager : MonoBehaviour
     {
 		vidaText.text = (vida + " puntos de vida");
 		dineroText.text = (dinero + " oro");
+
+		timer += Time.deltaTime;
+		if (timer >= 2)
+		{
+			Instantiate(enemigo, spawn.position, Quaternion.identity);
+			timer = 0;
+		}
 	}
 }

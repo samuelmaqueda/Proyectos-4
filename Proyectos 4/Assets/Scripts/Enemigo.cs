@@ -6,6 +6,7 @@ public class Enemigo : MonoBehaviour
 {
 	public float speed = 5;
 	public float contador = 0;
+	public float vida = 1;
 	public GameObject punto2;
 	public GameObject puntoFin;
 	public Transform punto2Transform;
@@ -57,10 +58,19 @@ public class Enemigo : MonoBehaviour
 
 	public void Comprobacion()
 	{
-		if(this.transform.position == punto2Transform.position)
+		if (this.transform.position == punto2Transform.position)
 		{
 			llegada1 = true;
 		}
-		
+
+	}
+
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.tag == "Bala")
+		{
+			Debug.Log("impacto de bala");
+			Destroy(this.gameObject);
+		}
 	}
 }
