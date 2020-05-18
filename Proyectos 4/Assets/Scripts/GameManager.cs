@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
 	public GameObject enemigo;
+	public GameObject enemigo2;
 	public Transform spawn;
+	public Transform spawn2;
 	public float vida = 10;
 	public float dinero = 100;
 	public Text vidaText;
@@ -14,11 +16,13 @@ public class GameManager : MonoBehaviour
 	public float timer;
 	public SimpleHealthBar healthBar;
 	Transform fin;
-	public Torreta torreta;
-    // Start is called before the first frame update
-    void Start()
+	Torreta torreta;
+	public bool torreta1Selec = true;
+	public bool torreta2Selec;
+	// Start is called before the first frame update
+	void Start()
     {
-
+		
 		torreta = GameObject.FindObjectOfType<Torreta>();
 
 	}
@@ -31,9 +35,10 @@ public class GameManager : MonoBehaviour
 
 		timer += Time.deltaTime;
 
-		if (timer >= 2f)
+		if (timer >= 5f)
 		{
 			Instantiate(enemigo, spawn.position, Quaternion.identity);
+			Instantiate(enemigo2, spawn2.position, Quaternion.identity);
 			timer = 0;
 		}
 
@@ -47,5 +52,17 @@ public class GameManager : MonoBehaviour
 			dinero -= 100;
 			torreta.cadencia -= 0.5f;
 		}
+	}
+
+	public void seleccionarTorreta1()
+	{
+		torreta1Selec = true;
+		torreta2Selec = false;
+	}
+
+	public void seleccionarTorreta2()
+	{
+		torreta1Selec = false;
+		torreta2Selec = true;
 	}
 }
