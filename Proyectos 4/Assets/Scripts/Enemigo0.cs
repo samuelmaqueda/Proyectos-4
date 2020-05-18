@@ -2,31 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemigo2 : MonoBehaviour
+public class Enemigo0 : MonoBehaviour
 {
 	public float speed = 5;
+	public float contador = 0;
 	public float vida = 1;
-	public GameObject punto1;
 	public GameObject punto2;
 	public GameObject puntoFin;
-	public Transform punto1Transform;
 	public Transform punto2Transform;
 	public Transform puntoFinTransform;
 	public bool llegada1;
-	public bool llegada2;
 	public GameManager gm;
 	// Start is called before the first frame update
 	void Start()
 	{
 		gm = GameObject.FindObjectOfType<GameManager>();
 
-		punto1 = GameObject.Find("Punto 1b");
-		punto1Transform = punto1.transform;
-
-		punto2 = GameObject.Find("Punto 2b");
+		punto2 = GameObject.Find("Punto 1");
 		punto2Transform = punto2.transform;
 
-		puntoFin = GameObject.Find("Punto finb");
+		puntoFin = GameObject.Find("Llegada");
 		puntoFinTransform = puntoFin.transform;
 	}
 
@@ -43,15 +38,10 @@ public class Enemigo2 : MonoBehaviour
 		float step = speed * Time.deltaTime;
 		if (llegada1 == false)
 		{
-			transform.position = Vector3.MoveTowards(transform.position, punto1Transform.position, step);
-			transform.LookAt(punto1.transform);
-		}
-		else if (llegada1 == true && llegada2 == false)
-		{
 			transform.position = Vector3.MoveTowards(transform.position, punto2Transform.position, step);
 			transform.LookAt(punto2.transform);
 		}
-		else 
+		else
 		{
 			transform.position = Vector3.MoveTowards(transform.position, puntoFinTransform.position, step);
 			transform.LookAt(puntoFin.transform);
@@ -68,13 +58,9 @@ public class Enemigo2 : MonoBehaviour
 
 	public void Comprobacion()
 	{
-		if (this.transform.position == punto1Transform.position)
+		if (this.transform.position == punto2Transform.position)
 		{
 			llegada1 = true;
-		}
-		else if (this.transform.position == punto2Transform.position)
-		{
-			llegada2 = true;
 		}
 
 	}
@@ -96,6 +82,9 @@ public class Enemigo2 : MonoBehaviour
 		{
 			gm.muertes++;
 			Destroy(this.gameObject);
+			gm.dinero += 35;
 		}
 	}
+
+
 }

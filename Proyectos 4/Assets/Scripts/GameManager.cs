@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
 	Torreta torreta;
 	public bool torreta1Selec = true;
 	public bool torreta2Selec;
+	public float muertes;
 	// Start is called before the first frame update
 	void Start()
     {
@@ -47,7 +48,12 @@ public class GameManager : MonoBehaviour
 
 		if (vida <= 0)
 		{
-			SceneManager.LoadScene("Scene 2");
+			SceneManager.LoadScene("GG");
+		}
+
+		if (muertes >= 30)
+		{
+			SceneManager.LoadScene("MENU");
 		}
 	}
 
