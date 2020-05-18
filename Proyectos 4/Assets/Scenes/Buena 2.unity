@@ -240,8 +240,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -293, y: -180}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -312, y: -156}
+  m_SizeDelta: {x: 84.22, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &96077514
 MonoBehaviour:
@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.93442965, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -401,7 +401,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Torreta 2
 --- !u!222 &141984065
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1357,14 +1357,14 @@ RectTransform:
   m_GameObject: {fileID: 1346132602}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 9.12567, y: 8.2058, z: 8.2058}
+  m_LocalScale: {x: 0.9277843, y: 1.7709966, z: 1.7709966}
   m_Children: []
   m_Father: {fileID: 1144027792}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -964, y: 0}
+  m_AnchoredPosition: {x: -313, y: -121}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1346132604
@@ -1380,13 +1380,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6320754, g: 0.47987348, b: 0.14012992, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e12c1eb95d8919b449a68ddf8d08faa7, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1471,7 +1471,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Torreta 1
 --- !u!222 &1391877105
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1567,8 +1567,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1554615694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -78.7, y: 74.3, z: 103.31}
-  m_LocalScale: {x: 21.48974, y: 23.615099, z: 12.941874}
+  m_LocalPosition: {x: -113.36, y: 74.3, z: 103.31}
+  m_LocalScale: {x: 14.561448, y: 23.615099, z: 12.941874}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -1746,8 +1746,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -301, y: -107}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -313, y: -86}
+  m_SizeDelta: {x: 84.51, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1712029344
 MonoBehaviour:
@@ -1816,7 +1816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.89063257, g: 0.9811321, b: 0.26379493, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1877,7 +1877,7 @@ MonoBehaviour:
   spawn: {fileID: 1557051742}
   spawn2: {fileID: 270551243}
   vida: 10
-  dinero: 100000
+  dinero: 80
   vidaText: {fileID: 1674692024}
   dineroText: {fileID: 310330995}
   timer: 0
@@ -2195,7 +2195,7 @@ PrefabInstance:
     - target: {fileID: 7178272722021946411, guid: 08868064aa94a144b8227f6a68b88156,
         type: 3}
       propertyPath: dinero
-      value: 100000
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 7178272722021946408, guid: 08868064aa94a144b8227f6a68b88156,
         type: 3}

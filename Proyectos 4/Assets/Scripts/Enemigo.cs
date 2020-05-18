@@ -81,6 +81,7 @@ public class Enemigo : MonoBehaviour
 		if (vida <= 0)
 		{
 			Destroy(this.gameObject);
+			gm.dinero += 35;
 		}
 	}
 
