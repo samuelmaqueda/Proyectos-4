@@ -65,12 +65,24 @@ public class Enemigo : MonoBehaviour
 
 	}
 
-	private void OnTriggerEnter(Collider other)
+	public void OnTriggerEnter(Collider other)
 	{
+		
+
 		if (other.tag == "Bala")
 		{
-			Debug.Log("impacto de bala");
+			vida--;
+		}
+		else
+		{
+			Debug.Log("p");
+		}
+
+		if (vida <= 0)
+		{
 			Destroy(this.gameObject);
 		}
 	}
+
+
 }
