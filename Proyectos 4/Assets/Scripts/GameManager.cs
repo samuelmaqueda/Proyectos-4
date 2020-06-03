@@ -60,9 +60,9 @@ public class GameManager : MonoBehaviour
 
 	public void AumetarCadencia()
 	{
-		if(dinero >= 100)
+		if(dinero >= 200)
 		{
-			dinero -= 100;
+			dinero -= 200;
 			torreta.cadencia -= 0.5f;
 		}
 	}
