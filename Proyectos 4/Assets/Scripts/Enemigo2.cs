@@ -94,6 +94,7 @@ public class Enemigo2 : MonoBehaviour
 
 		if (vida <= 0)
 		{
+			gm.dinero += 15;
 			gm.muertes++;
 			Destroy(this.gameObject);
 		}
