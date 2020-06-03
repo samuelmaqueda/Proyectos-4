@@ -10,11 +10,12 @@ public class Torreta : MonoBehaviour
 	public float timer;
 	public Collider enemigo;
 	public float cadencia;
+	SonidosManager MR;
 	// Start is called before the first frame update
 	void Start()
     {
-        
-    }
+		MR = GameObject.FindObjectOfType<SonidosManager>();
+	}
 
     // Update is called once per frame
     void Update()
@@ -45,6 +46,7 @@ public class Torreta : MonoBehaviour
 			if (enemigo.tag == "Enemigo")
 			{
 				Instantiate(prefabBala, cañon.position, cañon.rotation);
+				MR.playDisparo();
 			}
 			timer = 0;
 		}

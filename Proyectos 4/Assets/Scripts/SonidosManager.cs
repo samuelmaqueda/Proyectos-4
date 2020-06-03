@@ -12,9 +12,15 @@ public class SonidosManager : MonoBehaviour
 		audioData = GetComponent<AudioSource>();
 	}
 
-	public void playBotton()
+	public void playDañado()
 	{
 		audioData.clip = audios[0];
+		audioData.Play();
+	}
+
+	public void playDisparo()
+	{
+		audioData.clip = audios[1];
 		audioData.Play();
 	}
 }
