@@ -1179,8 +1179,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5798883813754367443}
   - component: {fileID: 4536186796136186025}
-  - component: {fileID: 1420184670917942992}
   - component: {fileID: 1473036098696509093}
+  - component: {fileID: 4180783041565266659}
   - component: {fileID: 739458469296781244}
   m_Layer: 9
   m_Name: Voliboar
@@ -1198,7 +1198,7 @@ Transform:
   m_GameObject: {fileID: 7359620397639245760}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 42, y: 22.44, z: 101.88}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.3457656, y: 3.3457656, z: 3.3457656}
   m_Children:
   - {fileID: 4041727590087868139}
   - {fileID: 6305906942353395541}
@@ -1224,27 +1224,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1420184670917942992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7359620397639245760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b243581710d391478292ec5b60da08f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  contador: 0
-  vida: 1
-  punto2: {fileID: 0}
-  puntoFin: {fileID: 0}
-  punto2Transform: {fileID: 0}
-  puntoFinTransform: {fileID: 0}
-  llegada1: 0
-  gm: {fileID: 0}
 --- !u!54 &1473036098696509093
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1261,6 +1240,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4180783041565266659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7359620397639245760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bfcea7b9ffcd74ea30648413e26319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  vida: 5
+  punto1: {fileID: 0}
+  punto2: {fileID: 0}
+  puntoFin: {fileID: 0}
+  punto1Transform: {fileID: 0}
+  punto2Transform: {fileID: 0}
+  puntoFinTransform: {fileID: 0}
+  llegada1: 0
+  llegada2: 0
+  gm: {fileID: 0}
 --- !u!65 &739458469296781244
 BoxCollider:
   m_ObjectHideFlags: 0
