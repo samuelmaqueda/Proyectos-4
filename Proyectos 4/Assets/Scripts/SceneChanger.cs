@@ -20,6 +20,11 @@ public class SceneChanger : MonoBehaviour
 		SceneManager.LoadScene("Buena 2");
 	}
 
+	public void CambiarEscena3()
+	{
+		SceneManager.LoadScene("Buena 3");
+	}
+
 	public void CerrarJuego()
 	{
 		Application.Quit();
