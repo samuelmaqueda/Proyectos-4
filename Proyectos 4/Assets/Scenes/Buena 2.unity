@@ -2483,7 +2483,7 @@ PrefabInstance:
     - target: {fileID: 3377483295241146395, guid: ae2022a173462134692441576dd19bd1,
         type: 3}
       propertyPath: dinero
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae2022a173462134692441576dd19bd1, type: 3}

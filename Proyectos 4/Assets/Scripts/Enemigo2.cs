@@ -15,10 +15,12 @@ public class Enemigo2 : MonoBehaviour
 	public bool llegada1;
 	public bool llegada2;
 	public GameManager gm;
+	SonidosManager MR;
 	// Start is called before the first frame update
 	void Start()
 	{
 		gm = GameObject.FindObjectOfType<GameManager>();
+		MR = GameObject.FindObjectOfType<SonidosManager>();
 
 		punto1 = GameObject.Find("Punto 1b");
 		punto1Transform = punto1.transform;
@@ -86,6 +88,7 @@ public class Enemigo2 : MonoBehaviour
 		if (other.tag == "Bala")
 		{
 			vida--;
+			MR.playDañado();
 		}
 		else
 		{
