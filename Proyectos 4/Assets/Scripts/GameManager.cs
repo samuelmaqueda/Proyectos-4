@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
 
 		timer += Time.deltaTime;
 
-		if (timer >= 5f)
+		if (timer >= 3f)
 		{
 			Instantiate(enemigo, spawn.position, Quaternion.identity);
 			Instantiate(enemigo2, spawn2.position, Quaternion.identity);
