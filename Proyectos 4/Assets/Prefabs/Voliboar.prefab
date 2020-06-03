@@ -1253,7 +1253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  vida: 5
+  vida: 2
   punto1: {fileID: 0}
   punto2: {fileID: 0}
   puntoFin: {fileID: 0}
