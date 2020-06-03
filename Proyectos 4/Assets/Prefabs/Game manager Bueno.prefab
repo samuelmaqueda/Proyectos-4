@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6325357103809563866
+--- !u!1 &3377483295241146394
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6325357103809563844}
-  - component: {fileID: 6325357104272135386}
-  - component: {fileID: 6325357103809563867}
+  - component: {fileID: 3377483295241146393}
+  - component: {fileID: 3377483295241146395}
+  - component: {fileID: 3377483295241146392}
   m_Layer: 0
   m_Name: Game manager Bueno
   m_TagString: Untagged
@@ -18,13 +18,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6325357103809563844
+--- !u!4 &3377483295241146393
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6325357103809563866}
+  m_GameObject: {fileID: 3377483295241146394}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -99.52176, y: -229.7687, z: 34.238903}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,20 +32,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6325357104272135386
+--- !u!114 &3377483295241146395
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6325357103809563866}
+  m_GameObject: {fileID: 3377483295241146394}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c87ea1c6805fc5948ae58db262e258bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemigo: {fileID: 7359620397639245760, guid: bd89bcf5de9564f40a26b3535f7b3887, type: 3}
-  enemigo2: {fileID: 6733935107967528921, guid: e6a1d2de1d74b5f48a4375bb8b171c46,
+  enemigo: {fileID: 2249188922696396344, guid: 43f12bd65fc900c4fbb36042679ca4b1, type: 3}
+  enemigo2: {fileID: 2249188922696396344, guid: c05ad5a4e632b2145af470c7273d5840,
     type: 3}
   spawn: {fileID: 0}
   spawn2: {fileID: 0}
@@ -59,13 +59,13 @@ MonoBehaviour:
   torreta2Selec: 0
   torreta3Selec: 0
   muertes: 0
---- !u!82 &6325357103809563867
+--- !u!82 &3377483295241146392
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6325357103809563866}
+  m_GameObject: {fileID: 3377483295241146394}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
