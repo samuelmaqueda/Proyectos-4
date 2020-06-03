@@ -6,6 +6,7 @@ public class InstanceManager : MonoBehaviour
 {
 	public GameObject prefabTorreta;
 	public GameObject prefabTorreta2;
+	public GameObject prefabTorreta3;
 	public GameManager gm;
 	public LayerMask suelo;
 
@@ -22,11 +23,12 @@ public class InstanceManager : MonoBehaviour
 		{
 			if (Input.GetMouseButtonDown(0))
 			{
-				gm.dinero -= 20;
+				
 				Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 				RaycastHit infoImpacto;
 				if (Physics.Raycast(ray, out infoImpacto,Mathf.Infinity, suelo))
 				{
+					gm.dinero -= 20;
 					Debug.Log("impactado");
 					Vector3 puntoImpacto = infoImpacto.point;
 					Instantiate(prefabTorreta, puntoImpacto, Quaternion.identity);
@@ -37,17 +39,34 @@ public class InstanceManager : MonoBehaviour
 		{
 			if (Input.GetMouseButtonDown(0))
 			{
-				gm.dinero -= 40;
+				
 				Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 				RaycastHit infoImpacto;
 				if (Physics.Raycast(ray, out infoImpacto, Mathf.Infinity, suelo))
 				{
 					Debug.Log("impactado2");
+					gm.dinero -= 40;
 					Vector3 puntoImpacto = infoImpacto.point;
 					Instantiate(prefabTorreta2, puntoImpacto, Quaternion.identity);
 				}
 			}
 		}
-		
+		else if (gm.dinero >= 80 && gm.torreta3Selec == true)
+		{
+			if (Input.GetMouseButtonDown(0))
+			{
+				
+				Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+				RaycastHit infoImpacto;
+				if (Physics.Raycast(ray, out infoImpacto, Mathf.Infinity, suelo))
+				{
+					Debug.Log("impactado3");
+					gm.dinero -= 80;
+					Vector3 puntoImpacto = infoImpacto.point;
+					Instantiate(prefabTorreta2, puntoImpacto, Quaternion.identity);
+				}
+			}
+		}
+
 	}
 }
