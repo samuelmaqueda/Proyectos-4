@@ -20,9 +20,6 @@ public class Torreta : MonoBehaviour
     void Update()
     {
 		timer += Time.deltaTime;
-
-		
-
 	}
 
 

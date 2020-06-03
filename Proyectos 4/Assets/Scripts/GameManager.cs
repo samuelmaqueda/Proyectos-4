@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
 	Torreta torreta;
 	public bool torreta1Selec = true;
 	public bool torreta2Selec;
+	public bool torreta3Selec;
 	public float muertes;
 	// Start is called before the first frame update
 	void Start()
@@ -70,11 +71,20 @@ public class GameManager : MonoBehaviour
 	{
 		torreta1Selec = true;
 		torreta2Selec = false;
+		torreta3Selec = false;
 	}
 
 	public void seleccionarTorreta2()
 	{
 		torreta1Selec = false;
 		torreta2Selec = true;
+		torreta3Selec = false;
+	}
+
+	public void seleccionarTorreta3()
+	{
+		torreta1Selec = false;
+		torreta2Selec = false;
+		torreta3Selec = true;
 	}
 }
