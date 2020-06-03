@@ -227,7 +227,7 @@ MonoBehaviour:
   "ca\xF1on": {fileID: 409162740029373432}
   timer: 0
   enemigo: {fileID: 0}
-  cadencia: 2
+  cadencia: 3.5
 --- !u!54 &4364239041420791085
 Rigidbody:
   m_ObjectHideFlags: 0

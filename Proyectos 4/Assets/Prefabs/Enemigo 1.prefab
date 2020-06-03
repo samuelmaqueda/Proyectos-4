@@ -41,9 +41,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b243581710d391478292ec5b60da08f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 6
   contador: 0
-  vida: 1
+  vida: 2
   punto2: {fileID: 0}
   puntoFin: {fileID: 0}
   punto2Transform: {fileID: 0}

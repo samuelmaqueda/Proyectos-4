@@ -82,7 +82,7 @@ public class Enemigo : MonoBehaviour
 		{
 			gm.muertes++;
 			Destroy(this.gameObject);
-			gm.dinero += 35;
+			gm.dinero += 15;
 		}
 	}
 
