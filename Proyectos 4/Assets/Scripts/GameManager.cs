@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
 	public Text vidaText;
 	public Text dineroText;
 	public float timer;
+	public float timerComp = 5;
 	public SimpleHealthBar healthBar;
 	Transform fin;
 	Torreta torreta;
@@ -38,11 +39,17 @@ public class GameManager : MonoBehaviour
 
 		timer += Time.deltaTime;
 
-		if (timer >= 5f)
+		if (timer >= timerComp)
 		{
 			Instantiate(enemigo, spawn.position, Quaternion.identity);
 			Instantiate(enemigo2, spawn2.position, Quaternion.identity);
 			timer = 0;
+			timerComp -= 0.2f;
+
+			if(timerComp <= 0.5)
+			{
+				timerComp = 0.5f;
+			}
 		}
 
 		healthBar.UpdateBar(vida, 10f);

@@ -1,35 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7156459911391325172
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3629072606386412978}
-  m_Layer: 10
-  m_Name: "Ca\xF1\xF3n"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3629072606386412978
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7156459911391325172}
-  m_LocalRotation: {x: -0, y: -0.6936721, z: -0, w: 0.72029096}
-  m_LocalPosition: {x: -0.01, y: 4.4399986, z: 5.42}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2427783919386463437}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -87.843, z: 0}
 --- !u!54 &2724380969681531036
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -76,7 +46,37 @@ MonoBehaviour:
   "ca\xF1on": {fileID: 3629072606386412978}
   timer: 0
   enemigo: {fileID: 0}
-  cadencia: 3
+  cadencia: 5
+--- !u!1 &7156459911391325172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3629072606386412978}
+  m_Layer: 10
+  m_Name: "Ca\xF1\xF3n"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3629072606386412978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7156459911391325172}
+  m_LocalRotation: {x: -0, y: -0.6936721, z: -0, w: 0.72029096}
+  m_LocalPosition: {x: -0.01, y: 4.4399986, z: 5.42}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2427783919386463437}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -87.843, z: 0}
 --- !u!1001 &7263053108349380567
 PrefabInstance:
   m_ObjectHideFlags: 0
